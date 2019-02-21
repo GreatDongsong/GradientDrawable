@@ -1,6 +1,7 @@
 package dawson.com.gradientdrawable;
 
 import android.app.Activity;
+import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.RequiresApi;
@@ -22,8 +23,8 @@ public class MainActivity extends AppCompatActivity {
     public static void gradientBackground(final Activity activity, final View bgView) {
         final int colorDark;
         final int colorLight;
-        colorLight = 0xff676f76;
-        colorDark = 0xff333f48;
+        colorLight = Color.RED;
+        colorDark = Color.BLUE;
         bgView.post(new Runnable() {
             @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
             @Override
